@@ -1,0 +1,55 @@
+{
+  "name": "love-indianapolis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:db": "tsx tests/database.integration.ts",
+    "menu:qr": "tsx scripts/menu-qr.ts",
+    "studio": "sanity dev"
+  },
+  "dependencies": {
+    "@sanity/client": "^7.12.0",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.80.0",
+    "lucide-react": "^0.552.0",
+    "next": "^16.0.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "resend": "^6.4.0",
+    "server-only": "^0.0.1",
+    "stripe": "^19.3.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@electric-sql/pglite": "^0.5.16",
+    "@playwright/test": "^1.56.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "pg": "^8.16.0",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^5.1.0",
+    "sanity": "^6.22.0"
+  },
+  "type": "module",
+  "overrides": {
+    "js-yaml@>=3 <4": "^3.15.2",
+    "smol-toml": "^1.8.1",
+    "undici": "^7.30.1",
+    "minimatch@>=7 <11": "^11.0.1"
+  }
+}
